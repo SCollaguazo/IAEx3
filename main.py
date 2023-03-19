@@ -14,7 +14,7 @@ def predecir():
     #if not request.json:
         #abort(400)
     
-    array = {request.json{'tempd_o'}}
+    array = {request.json('tempd_o')}
     return jsonify({"Label":array})
     #,request.json['rh_o'],request.json['dir_o'],request.json['spd_o'],request.json['mslp_o'],request.json['visibility_o'],request.json['skyc1_o'],request.json['skyc2_o'],
     #request.json['skyc3_o'],request.json['wxcodes_o'],request.json['year'],request.json['month'],
