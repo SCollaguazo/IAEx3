@@ -11,7 +11,7 @@ def index():
 
 @app.route('/',methods=['POST'])
 def predecir():
-    if not request.json:
+    #if not request.json:
         #abort(400)
         
     array = {"metar": [request.json['tempd_o'],request.json['rh_o'],request.json['dir_o'],request.json['spd_o'],request.json['mslp_o'],request.json['visibility_o'],request.json['skyc1_o'],request.json['skyc2_o'],
